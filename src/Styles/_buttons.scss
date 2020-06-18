@@ -1,0 +1,40 @@
+// all common button styles
+.btn{
+    display: block;
+    padding: 10px 20px;
+    background: #fff;
+    text-decoration: none;
+    color: $text;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+        @include shadowDark(0px, 0px, 0px, 0);
+    }
+
+    &:focus{
+        outline: none;
+    }
+
+    &__block{
+        width: 100%;
+    }
+
+    &__primary{
+        background: $primary;
+        color: $white;
+    }
+
+    &__success{
+        background: $success;
+        color: $text;
+    }
+
+    &__cyan{
+        background: $cyan;
+        color: $text;
+    }
+}

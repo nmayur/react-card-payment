@@ -1,0 +1,43 @@
+// form fields
+.form_group{
+    margin-bottom: 30px;
+    width: 100%;
+    label{
+        @include openSans(14px, 600);
+        text-transform: uppercase;
+    }
+
+    .form_check_label{        
+        @include openSans(14px, 500);
+        text-transform: initial;
+        padding-left: 10px;
+    }
+
+    .form_control{
+        display: block;
+        width: 100%;
+        min-height: 40px;
+        padding: 0px 10px;
+        border: none;
+        border-bottom: solid 1.5px #6F6F6F;
+        background: transparent;
+        font-size: 16px;
+        font-weight: 400;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &.invalid{
+        .form_control{
+            border-color: $error;
+        }
+    }
+}
+
+.field_error{
+    margin-top: 5px;
+    @include openSans(14px, 500);
+    color: $error;
+}

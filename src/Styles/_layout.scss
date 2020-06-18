@@ -1,0 +1,36 @@
+.main_body{
+    width: 100%;
+    min-height: 100vh;
+
+    @include mobile(){
+        padding: 50px 0px;
+    }
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+
+    &__center{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0px 15px;
+
+    @include mobile(){
+        width: 100%;
+    }
+}
+
+.d__block{
+    display: block;
+}
+
+// reset datePicker
+.react-datepicker-wrapper, .react-datepicker__input-container{
+    display: block !important;
+}

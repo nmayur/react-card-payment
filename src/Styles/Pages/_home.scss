@@ -1,0 +1,8 @@
+.proceed_to_pay{
+    @include openSans(18px, 600);
+    letter-spacing: 1px;
+    max-width: 320px;
+    padding: 15px;
+    
+    @include shadowDark(0, 10px, 20px);
+}
