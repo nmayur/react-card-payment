@@ -1,36 +1,59 @@
-.main_body{
+.main_body {
     width: 100%;
     min-height: 100vh;
 
-    @include mobile(){
+    @include mobile() {
         padding: 50px 0px;
     }
 }
 
-.flex{
+.flex {
     display: flex;
     flex-wrap: wrap;
 
-    &__center{
+    &__center {
         align-items: center;
         justify-content: center;
     }
 }
 
-.container{
+.container {
     max-width: 1200px;
     padding: 0px 15px;
 
-    @include mobile(){
+    @include mobile() {
         width: 100%;
     }
 }
 
-.d__block{
+.d__block {
     display: block;
 }
 
+.loading {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
 // reset datePicker
-.react-datepicker-wrapper, .react-datepicker__input-container{
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
     display: block !important;
 }
