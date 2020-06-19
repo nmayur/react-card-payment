@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Project Description
 
 A simple card payment ui using `react, formik, SCSS Pre-processor`.
-The poject contains simple & subtle animation and is made moible responsive using `@media queries`.
+The project contains simple & subtle animation and is made mobile responsive using `@media queries`.
 [Click here](https://react-card-payment.web.app/) or check the following link for live demo [https://react-card-payment.web.app/](https://react-card-payment.web.app/) 
 
 ## Available Scripts
